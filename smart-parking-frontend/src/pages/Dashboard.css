@@ -1,0 +1,476 @@
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.dashboard-nav {
+  min-height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5eaf1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  box-sizing: border-box;
+  gap: 25px;
+}
+
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 43px;
+  height: 43px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.dashboard-logo h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.dashboard-logo span {
+  display: block;
+  margin-top: 2px;
+  color: #8a94a6;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+}
+
+.dashboard-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard-links a {
+  text-decoration: none;
+  color: #687386;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 13px;
+  border-radius: 9px;
+  transition: 0.2s ease;
+}
+
+.dashboard-links a:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.dashboard-links .active-nav-link {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.logout-button {
+  border: none;
+  background: transparent;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 13px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #fef2f2;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.dashboard-content {
+  width: 88%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 45px 0 70px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.dashboard-hero {
+  min-height: 300px;
+  background: #172033;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 45px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 650px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #93c5fd;
+  margin-bottom: 13px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 43px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.hero-text h1 span {
+  color: #60a5fa;
+}
+
+.hero-text p {
+  max-width: 590px;
+  margin: 18px 0 0;
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.hero-features {
+  display: flex;
+  gap: 22px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.hero-features div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #dbeafe;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero-features span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+
+/* =========================
+   HERO SIDE CARD
+========================= */
+
+.hero-parking-card {
+  width: 245px;
+  min-width: 245px;
+  padding: 28px;
+  background: #ffffff;
+  color: #172033;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.hero-parking-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.hero-parking-card strong {
+  font-size: 18px;
+}
+
+.hero-parking-card p {
+  color: #687386;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 8px 0 18px;
+}
+
+.hero-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hero-status span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+}
+
+/* =========================
+   PARKING SECTION
+========================= */
+
+.parking-section {
+  margin-top: 50px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  color: #2563eb;
+}
+
+.section-heading h2 {
+  margin: 6px 0 5px;
+  font-size: 27px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #687386;
+  font-size: 14px;
+}
+
+.my-bookings-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* =========================
+   PARKING CARDS
+========================= */
+
+.parking-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.parking-card {
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+  transition: 0.25s ease;
+}
+
+.parking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+.parking-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parking-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.available-badge {
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #ecfdf3;
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.parking-card h2 {
+  margin: 20px 0 7px;
+  font-size: 19px;
+}
+
+.parking-location {
+  margin: 0;
+  color: #687386;
+  font-size: 13px;
+}
+
+/* =========================
+   PARKING INFO
+========================= */
+
+.parking-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 23px 0;
+}
+
+.info-box {
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.info-box span {
+  display: block;
+  color: #8a94a6;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.info-box strong {
+  font-size: 22px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.info-box small {
+  color: #8a94a6;
+  margin-left: 4px;
+}
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.book-button {
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 11px;
+  padding: 13px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.book-button:hover {
+  background: #1d4ed8;
+}
+
+.book-button span {
+  font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+  .dashboard-nav {
+    padding: 15px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-links {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .dashboard-hero {
+    padding: 35px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-parking-card {
+    width: 100%;
+  }
+
+  .parking-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-content {
+    width: 92%;
+    padding-top: 25px;
+  }
+
+  .dashboard-hero {
+    padding: 28px;
+    border-radius: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .parking-container {
+    grid-template-columns: 1fr;
+  }
+}
+

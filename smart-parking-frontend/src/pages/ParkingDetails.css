@@ -1,0 +1,313 @@
+
+.parking-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #0f172a;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+
+.parking-header {
+  background: white;
+  padding: 32px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.parking-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 750;
+}
+
+.parking-header p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.back-button {
+  border: none;
+  background: #0f172a;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+}
+
+/* CONTENT */
+
+.parking-content {
+  width: 86%;
+  max-width: 1200px;
+  margin: 35px auto;
+}
+
+/* LOCATION CARD */
+
+.location-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+  margin-bottom: 30px;
+}
+
+.location-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.location-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.location-card p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.slot-count {
+  margin-left: auto;
+  text-align: center;
+  min-width: 90px;
+}
+
+.slot-count strong {
+  display: block;
+  font-size: 26px;
+  color: #2563eb;
+}
+
+.slot-count span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* SLOT GRID */
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* SLOT CARD */
+
+.slot-card {
+  background: white;
+  border-radius: 18px;
+  padding: 23px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+  border: 1px solid #eef2f7;
+  transition: 0.25s;
+}
+
+.slot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.11);
+}
+
+.slot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.slot-number span {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+
+.slot-number strong {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+.available-badge {
+  background: #ecfdf5;
+  color: #059669;
+  border-radius: 20px;
+  padding: 6px 9px;
+  font-size: 10px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.slot-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 20px 0;
+}
+
+.slot-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.info-item strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vehicle-badge {
+  width: fit-content;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* BOOK BUTTON */
+
+.book-slot-button {
+  width: 100%;
+  margin-top: 22px;
+  border: none;
+  border-radius: 9px;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.book-slot-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* MESSAGE */
+
+.message-card {
+  background: white;
+  border-radius: 18px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.message-card p {
+  color: #64748b;
+}
+
+.empty-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #fff7ed;
+  color: #ea580c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* LOADER */
+
+.loader {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 15px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .parking-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .location-card {
+    flex-wrap: wrap;
+  }
+
+  .slot-count {
+    margin-left: 0;
+  }
+
+  .slots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parking-content {
+    width: 92%;
+  }
+}
+
